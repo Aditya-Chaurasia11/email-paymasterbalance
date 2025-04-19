@@ -1,214 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Whitelist Reminder</title>
+    <title>Paymaster Balance Alert</title>
   </head>
   <body
     style="
       margin: 0;
-      padding: 0;
-      font-family: Segoe UI, Tahoma, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #1f1e1f;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #ffffff;
     "
   >
     <table
       width="100%"
       cellpadding="0"
       cellspacing="0"
-      style="padding: 8px; background-color: #f4f4f4"
+      border="0"
+      bgcolor="#1f1e1f"
+      style="padding: 8px"
     >
       <tr>
         <td align="center">
+          <!-- Main container with background image -->
           <table
-            width="100%"
+            width="620"
             cellpadding="0"
             cellspacing="0"
+            border="0"
+            background="https://media-hosting.imagekit.io/86b2d08266fe4d56/top-gradient.png?Expires=1839571828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WxgnZ8uqGqSlpp9AvBwUhwuwSjzwz7vIAytHF14vLv7meydL8QpuBR7D1erIMpx6HGL8Oxlt2oaENwd9RliQ9gVmjTqe3hjgU5CNzDrm8PTqQgoktS-TlfPqZ6PQTHAM0X7ph1QgJu~TuuaB~k9HEWwFORDCW3MUu8Js4RHJX5E1oyq8UuDhrUHpL0GllbY9vf06n5xBpcUBZgaUo05~w0zrxw5vMYfRmSZi-jMFNIEpOOf-dpM2Etp8or4nrgkWGbZ6-LyShqXBXdp3Eoixyo7~JbQpInXVH5rkK5Nw9Ne2fmDolYuu5GvAJ4UOoFQkHVVb8gm-uTZ7XQ3~o72QAw__"
             style="
-              max-width: 600px;
-              background: #ffffff;
-              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+              background: url('https://media-hosting.imagekit.io/86b2d08266fe4d56/top-gradient.png?Expires=1839571828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WxgnZ8uqGqSlpp9AvBwUhwuwSjzwz7vIAytHF14vLv7meydL8QpuBR7D1erIMpx6HGL8Oxlt2oaENwd9RliQ9gVmjTqe3hjgU5CNzDrm8PTqQgoktS-TlfPqZ6PQTHAM0X7ph1QgJu~TuuaB~k9HEWwFORDCW3MUu8Js4RHJX5E1oyq8UuDhrUHpL0GllbY9vf06n5xBpcUBZgaUo05~w0zrxw5vMYfRmSZi-jMFNIEpOOf-dpM2Etp8or4nrgkWGbZ6-LyShqXBXdp3Eoixyo7~JbQpInXVH5rkK5Nw9Ne2fmDolYuu5GvAJ4UOoFQkHVVb8gm-uTZ7XQ3~o72QAw__')
+                no-repeat top center / contain;
+              background-color: #000000;
+              overflow: hidden;
+              padding: 40px;
             "
           >
-            <!-- Header -->
+            <!-- logo + warning -->
             <tr>
-              <td
-                style="
-                  background-color: #33cc74;
-                  color: white;
-                  padding: 25px;
-                  text-align: center;
-                "
-              >
-                <h1 style="margin: 0; font-size: 24px">
-                  Paymaster Balance Alert
-                </h1>
+              <td align="center">
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="105"
+                  style="margin-bottom: 35px"
+                >
+                  <tr>
+                    <td
+                      height="50"
+                      width="105"
+                      style="
+                        background-image: url('https://media-hosting.imagekit.io/017f25123c1346e5/Group%204.png?Expires=1839571953&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VVYtbLHFGJ~GCUSrMieD-QwVz5hd1eZRK1QFruV9kxUY9EuwEJwKjnhzU8hC6IztrwhR5u7Npo8ypg29u6AVgVXJj647Vh6Zm-PCxdQo4Dy3b-eWRADmD31KjXybq8ZJcybag-ShrTNBBG6MAdyNImbLaMMVWe96S7urIP-ZfLO~~YmPlQgZIfATQ0~cOmrKL5WbyIf6mLvohddX3dlUA-Mb86kKUoKVDuLQhjlSwQ2FOxqp6eIgpTqrK3b~1ws1Q--LArEqf56udten9Wq3Q8evGRb8N0weHJy3jaRHayBbxbdzv3b9tQUl0SG2ql7Q0qjgAm3OL6a-8ot7xlQoJA__');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                      "
+                    ></td>
+                  </tr>
+                </table>
+
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="95"
+                  style="margin-bottom: 35px"
+                >
+                  <tr>
+                    <td
+                      width="95"
+                      height="95"
+                      style="
+                        background-image: url('https://media-hosting.imagekit.io/9c4c413868c4447b/warning.png?Expires=1839571956&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Z2osMoc3WarC--1ndfsdGi34MvlXfvBPvg42qGv-yb0aM5Jy-tVR1O8Kdda4O47nV7llLcM2UhYNoMMDECU4ziT7GWLPTlKSkNr-tGTbEByOKrIiVq~SwHcDECJoF2qCpEiWNKV-eEbZhRo3mXcXsxnU0vTMpkPgZXoojiODsRg7H6xbioYrhRO5jaUvjWn2ACcKzDbfBVPds9t~Qfac2F7kqVJR-cVCMK-pN-gbXj9KJIVY~lN~hMs0A82Qy~iW~RQvgX1o5lkcYAkHhzC368vIkpXwZQ-iCxmjvQpro8r2I9NAAO3ecziyghilKczn9d7FbFcMIU8qOKMOeTnN4g__');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                      "
+                    ></td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
-            <!-- Main Content -->
+            <!-- heading  -->
             <tr>
-              <td style="padding: 30px 25px; font-size: 16px; line-height: 1.6">
+              <td align="center">
+                <h2
+                  style="
+                    margin: 0;
+                    color: #ffffff;
+                    font-size: 32px;
+                    font-weight: normal;
+                    margin-bottom: 45px;
+                  "
+                >
+                  Paymaster Balance Alert
+                </h2>
+              </td>
+            </tr>
+
+            <!-- Body text -->
+            <tr>
+              <td
+                style="
+                  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande',
+                    'Segoe UI', Arial, sans-serif;
+                  color: #ffffffe6;
+                  font-size: 20px;
+                  font-weight: normal;
+                  line-height: 1.25;
+                  letter-spacing: 0.5px;
+                "
+              >
                 <p>Hi there,</p>
                 <p>
                   This is a critical reminder that your
-                  <strong>LYNC Metis Paymaster</strong> wallet:
+                  <strong style="color: #ffffff; font-weight: bold"
+                    >LYNC Metis Paymaster</strong
+                  >
+                  wallet:
                 </p>
-                <p
+                <div
                   style="
-                    font-family: monospace;
-                    background: #f0fdf4;
-                    padding: 10px;
-                    border-left: 4px solid #44cc88;
-                    word-break: break-word;
+                    background-color: #ffffff;
+                    color: #000000;
+                    padding: 22px;
+                    border-radius: 10px;
+                    margin: 24px 0;
+                    border: 1px solid #55ff99;
                   "
                 >
                   0xE1B008192426e1F38b60aB36e99b17cb1DCEfEA6
-                </p>
-                <p>
-                  is <strong style="color: #1e7f55">very low</strong> on
-                  balance. Please top it up to avoid any interruptions.
-                </p>
-
-                <!-- Balance Box -->
-                <div
+                </div>
+                <p
                   style="
-                    background: #f0fdf4;
-                    border: 1px solid #c6f3df;
-                    border-radius: 8px;
-                    padding: 20px;
-                    margin: 24px 0;
+                    color: #ffffffe6;
+                    font-size: 20px;
+                    font-weight: normals;
                   "
                 >
-                  <div
-                    style="color: #1e7f55; font-weight: 500; margin-bottom: 6px"
+                  is
+                  <span style="color: #ff612f; font-weight: bold"
+                    >very low</span
                   >
-                    Current Balance
-                  </div>
-                  <div
-                    style="
-                      color: #44cc88;
-                      font-size: 22px;
-                      font-weight: 700;
-                      word-break: break-word;
-                    "
-                  >
-                    0.002828449946739145 ETH
-                  </div>
-                </div>
-
-                <!-- Top-up Address -->
-                <div style="margin: 20px 0">
-                  <p style="font-weight: 600; margin-bottom: 8px">
-                    Top-up Wallet Address:
-                  </p>
-                  <p
-                    style="
-                      font-family: monospace;
-                      background: #f0fdf4;
-                      padding: 10px;
-                      border-left: 4px solid #44cc88;
-                      word-break: break-word;
-                    "
-                  >
-                    0xE1B008192426e1F38b60aB36e99b17cb1DCEfEA6
-                  </p>
-                </div>
-
-                <p style="margin-top: 30px">Thanks,<br />Team LYNC World</p>
+                  on balance. Please top it up to avoid any interruptions.
+                </p>
               </td>
             </tr>
 
-            <!-- Divider -->
+            <!-- current balance -->
             <tr>
-              <td style="border-top: 4px solid #44cc88"></td>
+              <td align="left">
+                <div
+                  style="
+                    font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI',
+                      Arial, sans-serif;
+                    background-color: #000000;
+                    border: 1px solid #4ce589;
+                    border-radius: 10px;
+                    padding: 22px;
+                    font-size: 18px;
+                    margin: 24px 0;
+                  "
+                >
+                  <div style="margin-bottom: 12px">
+                    <span
+                      style="
+                        color: #ffffffe6;
+                        font-size: 20px;
+                        font-weight: 400;
+                      "
+                    >
+                      Current Balance
+                    </span>
+                  </div>
+                  <div>
+                    <span
+                      style="
+                        color: #ffffffe6;
+                        font-size: 28px;
+                        font-weight: bold;
+                      "
+                    >
+                      0.002828449946739145 ETH
+                    </span>
+                  </div>
+                </div>
+              </td>
             </tr>
 
-            <!-- Footer -->
+            <!-- Best regards -->
             <tr>
               <td
                 style="
-                  background-color: #f8f8f8;
-                  padding: 20px 25px;
-                  text-align: center;
-                  font-size: 13px;
-                  color: #666;
-                  border-top: 1px solid #eee;
+                  font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI',
+                    Arial, sans-serif;
+                  color: #ffffffe6;
+                  font-size: 20px;
+                  font-weight: 400;
+                  padding-top: 15px;
+                  line-height: 1.25;
+                  letter-spacing: 1px;
+                  padding-bottom: 47px;
                 "
               >
-                <div>
-                  <a
-                    href="https://x.com/lyncworld"
-                    target="_blank"
-                    style="text-decoration: none"
-                  >
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/450px-X_logo_2023_original.svg.png?20230728155658"
-                      alt="X / Twitter"
-                      style="
-                        margin: 0 5px;
-                        width: 18px;
-                        height: 18px;
-                        vertical-align: middle;
-                        border: 0;
-                      "
-                    />
-                  </a>
-                  <a
-                    href="https://t.me/lyncgg"
-                    target="_blank"
-                    style="text-decoration: none"
-                  >
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"
-                      alt="Telegram"
-                      style="
-                        margin: 0 5px;
-                        width: 24px;
-                        height: 24px;
-                        vertical-align: middle;
-                        border: 0;
-                      "
-                    />
-                  </a>
-                  <a
-                    href="mailto:team@lync.world"
-                    style="text-decoration: none"
-                  >
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
-                      alt="Email"
-                      style="
-                        margin: 0 5px;
-                        width: 24px;
-                        height: 24px;
-                        vertical-align: middle;
-                        border: 0;
-                      "
-                    />
-                  </a>
-                  <a
-                    href="https://discord.gg/lyncworld"
-                    target="_blank"
-                    style="text-decoration: none"
-                  >
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
-                      alt="Discord"
-                      style="
-                        margin: 0 5px;
-                        width: 24px;
-                        height: 24px;
-                        vertical-align: middle;
-                        border: 0;
-                      "
-                    />
-                  </a>
-                </div>
+                Best regards, <br />
+                Team <span style="color: #4ce589">LYNC World</span>
+              </td>
+            </tr>
 
-                <p style="margin-top: 15px">Lewes, Delaware 19958, US</p>
+            <!-- horizontal bar -->
+            <tr>
+              <td align="center">
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  style="height: 1px; width: 100%; background-color: #000000"
+                >
+                  <tr>
+                    <td
+                      style="
+                        background-image: url('https://media-hosting.imagekit.io/42636b234a5649f5/horizontal-bar.png?Expires=1839575301&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ybcaeqeV3qGmeMAskC6eED9-mGwnPYAXUb3yydG1LCycsLMeBjONIR1K9sCCG-k9U2qGJRkB47a-SMslqfHQ5zSoU1Wa7MN-c4ht~1L4YQNkNit6HA5zsSa8kv6UAodhP~knHXqv3ikOQM65l-1Wfrp0joWRsOeCaHu5oFckOe8u0MOd1gws45ulMvajzQIh57W11ZQ5lLMOVqwD-mKDdZacyVqtR~Lqg-VJ9ocavobyxxnSixEnJ-3XfgIQ0dseWFbwP64BORdhw4fTAZObuqVXpe8mIfDz37anOuK5p5vra85DAC-IigkcJYLUp1~rgRof0LxgLfoj7yrxSk~MCA__');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        height: 1px;
+                      "
+                    ></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Social Links -->
+            <tr>
+              <td align="center">
+                <div
+                  style="
+                    color: rgba(255, 255, 255, 0.3);
+                    letter-spacing: 0.5px;
+                    padding-top: 47px;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI',
+                        Arial, sans-serif;
+                      color: #ffffff;
+                      font-size: 24px;
+                      font-weight: 400;
+                      text-align: center;
+                    "
+                    >A GameFi Infrastructure</span
+                  >
+                  <br /><br />
+                  <div style="padding: 24px 0">
+                    <a
+                      href="https://lync.world/"
+                      target="_blank"
+                      style="
+                        color: rgba(255, 255, 255, 0.3);
+                        text-decoration: underline;
+                        font-size: 15px;
+                      "
+                    >
+                      About Us
+                    </a>
+
+                    |
+                    <a
+                      href="https://portal.lync.world/"
+                      target="_blank"
+                      style="
+                        color: rgba(255, 255, 255, 0.3);
+                        text-decoration: underline;
+                        font-size: 15px;
+                      "
+                      >LYNC Portal</a
+                    >
+                    |
+                    <a
+                      href="https://creator.lync.world/"
+                      target="_blank"
+                      style="
+                        color: rgba(255, 255, 255, 0.3);
+                        text-decoration: underline;
+                        font-size: 15px;
+                      "
+                      >NFT Deployer</a
+                    >
+                    |
+                    <a
+                      href="https://docs.lync.world/"
+                      target="_blank"
+                      style="
+                        color: rgba(255, 255, 255, 0.3);
+                        text-decoration: underline;
+                        font-size: 15px;
+                      "
+                      >Documentations</a
+                    >
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Social Icons -->
+            <tr>
+              <td align="center" style="padding: 34px 0">
+                <a
+                  href="https://x.com/lyncworld"
+                  style="margin: 0 9px; text-decoration: none"
+                  target="_blank"
+                >
+                  <img
+                    src="https://media-hosting.imagekit.io/3ffaff191de34aa1/twitter-512.png?Expires=1839592658&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Q4lBHfqpPAeAmeg4ZGG63SGQSkkzyQsO1rlhYgvs4IHCe3G4XkrohGXeupMNcOjUKzsm5PlA1sytpwJ1HoWAJYB0dqDvYCbG51hhYlrwU8FUJuiQuNGPmHsFRP5-gYBygGM3ZsAH7BiVBXT~wSJR0SAB08rvlgo3lAM6b3s7PTsxcQdKwQaArBHEJrfOp1XdVZPFOsKf1EZ9kCtx0Dgr-0VU1PMNO~3Pxk3AtP-VkysJYuKgNs1XjZl-o1EC2J3ZUpm4Owxg9c~SG4MAnQGpQtu7OqhhRX9wD6x9K2KDLZbFZQJOT-br-BKSWxwSRVnOTJD8KfRGWGqEFgt7Kv4ZFA__"
+                    alt="x"
+                    style="width: 24px"
+                  />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  style="margin: 0 9px; text-decoration: none"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.icons8.com/?size=100&id=32309&format=png&color=989899"
+                    alt="instagram"
+                    style="width: 24px"
+                  />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  style="margin: 0 9px; text-decoration: none"
+                  target="_blank"
+                >
+                  <img
+                    src="https://media-hosting.imagekit.io/49e3e2302a6e4a72/facebook-3-512.gif?Expires=1839593022&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=xetJM5QBTreci3Xhf6W7ZtLsGwH07K-u2ka7dv6b93a1w3yr7tBJ2W3gfk4~LgJCeN5JFPL2ZErxn~K7whWERj5TcJ-3~GLW301uf9FBsglqDIpvj895o3qCKa6HoqY7al9g67SgRuBBHblg2FPnVQHtiRgrG9piuciR90O8LdS4VhUEfdbOlqq0uaYh~hBVGKdfjkrsafFw4bZsY2cjvIcrHlVgAnfZsCFR6Tpl73Wf1COSauAovqlkrGP25xGEfPmAhSH192o6kdnk04PV9oj7enzHOMjceV0l4wTpbMtSHB5M6VPoTcGUSTaCGaRZo-VJTC-daGSSRjJKInFtWg__"
+                    alt="facebook"
+                    style="width: 24px"
+                  />
+                </a>
+                <a
+                  href="https://slack.com"
+                  style="margin: 0 9px; text-decoration: none"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.icons8.com/?size=100&id=OBMhWEebAWe9&format=png&color=989899"
+                    alt="slack"
+                    style="width: 24px"
+                  />
+                </a>
+                <a
+                  href="https://medium.com"
+                  style="margin: 0 9px; text-decoration: none"
+                  target="_blank"
+                >
+                  <img
+                    src="https://media-hosting.imagekit.io/f67622f25a1f46d4/medium%20(2).png?Expires=1839600669&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nprgkjIagqbjwYIQvwJVNhDwbDO4sJdeUHJNFbZlAZrqYTHhyFnlBX141IeWfSC8I8U8KDO82PJT0NM8a-Sjm1icMTGxqY~6kgK7B5XNqIM9nozbLlAz0JVIhzlXIX0jiohUp9BdJf0~RKv33NJSQM3JlK2eGdZevYKoxtVGXLU85npWgOUpq1MpAe6aNsnIRseTgRA4ihdrUoR~dnjfXgCibxZejoxQInVAYCc92ZDYkUnSFOvqCaEsMLZ8MmCoX1n~de0bktUGxU1kjHZrpbVgzuHgyX4t6itH2q92qxG5ZP7p-1-TwU4mb-QNxmv2TGHE~MCXFDMGrsBNfaT-JA__"
+                    alt="medium"
+                    style="width: 24px"
+                  />
+                </a>
+                <a
+                  href="https://dribbble.com"
+                  style="margin: 0 9px; text-decoration: none"
+                  target="_blank"
+                >
+                  <img
+                    src="https://media-hosting.imagekit.io/95ee0b254f4446a9/dribbble-512.png?Expires=1839592507&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=P69NMtM-ttJZMbb0bI~uQ2DItrvKcFezJcL9rNRdG70uDZpzyWjqjapXykN8HzTZlkJSMjczhJJXZ1sRyXLYV6hONPLnnIs1Il~XL9bdfcM~NYgGi-HhFIjdn6XAJWim2oTOgcFJGMZY-nclIR2dvrGGaOp6-~FhSfDKrYv~U38PvIfb3BxFSksLJpXVh5Pgd6i2FCmFEZGb2cXC9qaWGDitcrG4I5~5fTgUGjs66ZNdAMPiAsX8pwzDcimWQ27qf7reIwTtVktwD71qijs6risGAZD5vvCdfiDQnzrvQM~FKTtIyq6xm2gXXn4DaY6ut9u-HrhFBM9ue8YGOJ~wpw__"
+                    alt="dribbble"
+                    style="width: 24px"
+                  />
+                </a>
+              </td>
+            </tr>
+
+            <!-- Footer text -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  font-family: 'Trebuchet MS', 'Lucida Grande', 'Segoe UI',
+                    Arial, sans-serif;
+                  color: #ffffffcc;
+                  font-size: 16px;
+                  font-weight: lighter;
+                  padding: 20px 0;
+                "
+              >
+                If you have questions or concerns, feel free to reply to this
+                email.
               </td>
             </tr>
           </table>
